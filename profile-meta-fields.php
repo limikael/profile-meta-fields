@@ -59,9 +59,7 @@ function pm_form($p, $content) {
 		echo "<div class='updated'><p><strong>Profile updated.</strong></p></div>";
 	}
 
-	$self=$_SERVER["PHP_SELF"];
-
-	$s="<form class='profile-meta-form' method='post' action='".$self."'>";
+	$s="<form class='profile-meta-form' method='post'>";
 	$s.="<input type='hidden' name='profile-meta-form' value='1'/>";
 	$s.=do_shortcode($content);
 
